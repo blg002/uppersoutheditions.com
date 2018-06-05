@@ -1,0 +1,16 @@
+.featherlight {
+	background-color: rgba($about-background-color, 0.75) !important;
+}
+
+.featherlight-content {
+	padding: 0 !important;
+	border: 0 !important;
+	overflow: visible !important;
+}
+
+.featherlight-close-icon {
+	right: rem(-45) !important;
+	background-color: transparent !important;
+
+	@include hover { color: $red !important; }
+}

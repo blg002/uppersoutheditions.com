@@ -1,0 +1,28 @@
+@mixin link-hover( $color:$link-color-hover, $important:null ) {
+
+  &:hover, &:active, &:focus {
+    color: $color $important;
+    border-color: $color $important;
+    // @include background-image( $uv-gradient );
+    // @include background-clip( text );
+    // -webkit-text-fill-color: transparent;
+  }
+}
+
+@mixin link(
+    $color: $link-color,
+    $hover-color: $link-color-hover,
+    $border: true,
+    $important: null,
+    $border-color: $color
+  ) {
+
+  text-decoration: none $important;
+  color: $color $important;
+
+  @if $border {
+    border-bottom: 1px solid $border-color $important;
+  }
+
+  @include link-hover( $hover-color, $important );
+}

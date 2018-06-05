@@ -1,0 +1,26 @@
+* { @include box-sizing( border-box ); }
+
+html {
+	font-size:   7px;
+  font-weight: $base-font-weight;
+  font-family: $base-font-family;
+  line-height: ( $base-line-height / $base-font-size );
+  color: $text-color;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+
+  @include respond-to(min-width, $mobile-l-up) {
+    font-size: $root-font-size+px;
+  }
+}
+
+body {
+	margin: 0;
+  min-width: 320px;
+  font-size: rem($base-font-size);
+  background-color: $gray;
+  letter-spacing: tracking($base-letter-spacing);
+}

@@ -1,0 +1,20 @@
+.hover-multiply-wrap {
+	position: relative;
+	display: inline-block;
+
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: $about-background-color;
+		position: absolute;
+		left: 0;
+		z-index: -1;
+	}
+
+	@include hover {
+		.hover-multiply-img { mix-blend-mode: multiply; }
+	}
+}
+
+// .hover-multiply-img { width: 100%; }

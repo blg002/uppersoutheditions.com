@@ -1,0 +1,80 @@
+// ----------
+// Typography
+// ----------
+
+// Weights
+$font-weight-regular: 400;
+$font-weight-bold:    700;
+
+// Base
+$root-font-size: 10;
+
+$base-font-weight: $font-weight-regular;
+$base-font-size: 15;
+$base-line-height: 24;
+$base-font-family: Georgia,Times,'Times New Roman',serif;
+$base-letter-spacing: 0;
+
+
+// ------
+// Layout
+// ------
+
+$base-width: 1020px;
+
+// Grid
+$total-columns  : 6;
+$column-width   : 120px;
+$gutter-width   : 60px;
+$container-width: $base-width + $gutter-width;
+$container-style: fluid;
+
+// ------
+// Colors
+// ------
+
+// Named
+$text-gray:              rgb(115,117,115);
+$background-gray:        rgb(224,225,223);
+$about-background-color: rgb(200,202,199);
+
+// Semantic
+$red:       rgb(221,37,40);
+$gray:      $background-gray;
+$dark-gray: $about-background-color;
+
+// UI
+$text-color: $text-gray;
+$heading-color: black;
+
+$link-color: $red;
+$link-color-hover: $red;
+
+
+// ------
+// Responsive Breakpoint Widths
+// ------
+
+$iphone5-portrait:      320px;
+$iphone5-landscape:     568px;
+$iphone6plus-portrait:  415px;
+$iphone6plus-landscape: 736px;
+$ipad-portrait:         768px;
+$ipad-landscape:        1024px;
+
+$mobile-up:     ($iphone6plus-portrait + 1);
+$mobile-down:    $iphone6plus-portrait;
+$mobile-l-up:   ($iphone6plus-landscape + 1);
+$mobile-l-down:  $iphone6plus-landscape;
+
+$tablet-up:     ($ipad-portrait + 1);
+$tablet-down:    $ipad-portrait;
+$tablet-l-up:   ($ipad-landscape + 1);
+$tablet-l-down:  $ipad-landscape;
+
+$responsive-class-breakpoints: (
+	$mobile-up: mobile-up,
+	$mobile-l-up: mobile-l-up,
+	$tablet-up: tablet-up,
+	$tablet-l-up: tablet-l-up
+);

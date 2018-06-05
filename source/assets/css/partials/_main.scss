@@ -1,0 +1,38 @@
+.main {
+	padding-bottom: rem(80);
+}
+
+.main-header {
+	@include display-flex;
+	@include justify-content(space-between);
+	font-style: italic;
+	margin-bottom: rem(80);
+}
+
+.view-cart-button {
+	@include hover { cursor: pointer; }
+}
+
+.breadcrumbs {
+	text-transform: uppercase;
+	letter-spacing: tracking(150);
+	color: black;
+	font-size: rem(12);
+	font-style: normal;
+	font-weight: $font-weight-bold;
+
+	[class*=iconz] {
+		color: black;
+		font-size: rem(8);
+		margin-right: rem(10);
+		position: relative;
+		top: rem(-2);
+	}
+
+	@include hover { [class*=iconz] { color: $red; } }
+}
+
+.separator {
+	color: white;
+	margin: 0 rem(10);
+}

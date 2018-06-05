@@ -1,0 +1,11 @@
+@function rem($font-size){
+  @return #{$font-size / $root-font-size}rem
+};
+
+@function tracking($target) {
+  @return #{($target / 1000)}rem
+};
+
+@function cache-bust($image) {
+	@return '#{$image}?#{random()}';
+}

@@ -1,0 +1,5 @@
+a {
+  @include link( $border:false );
+  @include transition(color 0.1s, border-color 0.1s, background-color 0.1s);
+  outline: 0;
+}

@@ -1,0 +1,19 @@
+.about {
+	background-color: $about-background-color;
+	color: black;
+	padding-bottom: rem(80+50);
+
+	a {
+		@include link(
+	    $color: inherit,
+	    $hover-color: white,
+	    $border: true,
+	    $important: null,
+	    $border-color: white
+		);
+	}
+}
+
+.about-lede {
+	font-size: rem(20);
+}

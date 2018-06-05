@@ -1,0 +1,68 @@
+{
+  "checksum": {
+    "previous": "96b5453bfea2e6bec90a7f8b3106d59a844a8f5361e3f780449fb63fcbe36054",
+    "current": "96b5453bfea2e6bec90a7f8b3106d59a844a8f5361e3f780449fb63fcbe36054"
+  },
+  "fonts": [
+    "source/assets/css/iconz/iconz_96b5453bfea2e6bec90a7f8b3106d59a.ttf",
+    "source/assets/css/iconz/iconz_96b5453bfea2e6bec90a7f8b3106d59a.svg",
+    "source/assets/css/iconz/iconz_96b5453bfea2e6bec90a7f8b3106d59a.woff",
+    "source/assets/css/iconz/iconz_96b5453bfea2e6bec90a7f8b3106d59a.eot"
+  ],
+  "glyphs": {
+    "back-arrow": {
+      "codepoint": 61696,
+      "source": "source/assets/fonts/iconz/svgs/back-arrow.svg"
+    },
+    "down-arrow": {
+      "codepoint": 61697,
+      "source": "source/assets/fonts/iconz/svgs/down-arrow.svg"
+    },
+    "expand-icon": {
+      "codepoint": 61698,
+      "source": "source/assets/fonts/iconz/svgs/expand-icon.svg"
+    },
+    "facebook": {
+      "codepoint": 61699,
+      "source": "source/assets/fonts/iconz/svgs/facebook.svg"
+    },
+    "linkedin": {
+      "codepoint": 61700,
+      "source": "source/assets/fonts/iconz/svgs/linkedin.svg"
+    },
+    "twitter": {
+      "codepoint": 61701,
+      "source": "source/assets/fonts/iconz/svgs/twitter.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".iconz-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "iconz",
+    "force": false,
+    "input": {
+      "templates": "source/assets/fonts/iconz/svgs",
+      "vectors": "source/assets/fonts/iconz/svgs"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "source/assets/css",
+      "fonts": "source/assets/css/iconz",
+      "preview": "source/assets/css/iconz"
+    },
+    "preprocessor_path": "iconz/",
+    "quiet": false,
+    "templates": [
+      "scss"
+    ]
+  },
+  "templates": [
+    "source/assets/css/_iconz.scss"
+  ]
+}

@@ -1,0 +1,36 @@
+.lowercase { text-transform: lowercase !important; }
+.uppercase { text-transform: uppercase !important; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; }
+.clear { clear: both !important; }
+.clearfix { @include pie-clearfix; }
+
+.relative       { position: relative !important; }
+.block          { display: block !important; }
+.display-inline { display: inline !important; }
+.inline-block   { display: inline-block !important; }
+.hide           { display: none; }
+
+@for $i from 0 through 10 {
+  $j: $i * 10;
+
+  .m#{$i}      { margin: rem($j) !important; }
+  .mt#{$i}     { margin-top: rem($j) !important; }
+  .mb#{$i}     { margin-bottom: rem($j) !important; }
+  .mr#{$i}     { margin-right: rem($j) !important; }
+  .ml#{$i}     { margin-left: rem($j) !important; }
+
+  .p#{$i}      { padding: rem($j) !important; }
+  .pt#{$i}     { padding-top: rem($j) !important; }
+  .pb#{$i}     { padding-bottom: rem($j) !important; }
+  .pr#{$i}     { padding-right: rem($j) !important; }
+  .pl#{$i}     { padding-left: rem($j) !important; }
+}
+
+.text-right  { text-align: right !important; }
+@include responsive-class('text-right','text-align','right !important');
+.text-left   { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-middle { vertical-align: middle !important; }
+
+.left  { float: left !important; }
+.right { float: right !important; }

@@ -1,0 +1,23 @@
+@import "../iconz";
+
+
+[class*=iconz] {
+  display: inline-block;
+  font-size: rem(26);
+  line-height: 1;
+  color: $text-gray;
+  @include hover { color: black; };
+
+  &::before {
+    speak: none;
+    vertical-align: middle;
+  }
+
+  // Sizes
+  // &.large { font-size: rem(80); }
+
+  // Colors
+  // &.black { color: black; }
+}
+
+.iconz-expand-icon { margin-left: rem(4); }

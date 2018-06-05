@@ -1,0 +1,14 @@
+.topbar {
+	padding-bottom: rem(80);
+	border-bottom: 1px solid white;
+	margin-bottom: rem(4);
+
+	@include respond-to(min-width, $mobile-up) {
+		margin-bottom: rem(8);
+	}
+}
+
+.signature {
+	text-align: center;
+	margin-top: rem(-28);
+}

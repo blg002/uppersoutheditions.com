@@ -1,0 +1,58 @@
+.cards {
+	@include respond-to(min-width, $mobile-up) {
+		@include display-flex;
+		@include flex-wrap(wrap);
+		@include justify-content(space-between);
+		@include align-items(flex-end);
+	}
+}
+
+.card {
+	text-align: center;
+
+	@include respond-to(min-width, $mobile-up) {
+		&.small { width: span(2); }
+		&.med   { width: span(3); }
+		&.large { width: span(6); }
+	}
+}
+
+.card-img {
+	@include respond-to(min-width, $mobile-up) {
+		.circles & { max-height: rem(454); }
+	}
+}
+
+.card-meta {
+	@include display-flex;
+	@include justify-content(space-between);
+	@include align-items(flex-start);
+	margin-top: rem(20);
+	margin-bottom: rem(73);
+	text-align: left;
+}
+
+.card-heading {
+	color: black;
+	line-height: (20/15);
+}
+
+.card-dimensions {
+	font-style: italic;
+	line-height: (20/15);
+}
+
+.card-button {
+	font-size: rem(12);
+	letter-spacing: tracking(150);
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+	border: 1px solid white;
+	line-height: 1;
+	padding: rem(18/2) rem(36/2);
+
+	@include hover {
+		background-color: white;
+		border: 1px solid white;
+	}
+}

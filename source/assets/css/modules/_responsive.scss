@@ -1,0 +1,13 @@
+@mixin respond-to($feature, $point) {
+  @media screen and ($feature: $point) { @content; }
+}
+
+@mixin responsive-class($selector, $property, $value) {
+
+	@each $breakpoint, $breakpoint-name in $responsive-class-breakpoints {
+
+		@include respond-to( min-width, $breakpoint ) {
+			.#{$breakpoint-name}-#{$selector} { #{$property}:#{$value}; }
+		}
+	}
+}

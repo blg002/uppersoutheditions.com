@@ -1,0 +1,42 @@
+<%= partial 'layouts/partials/topbar' %>
+
+<main class="main container" role="main">
+	<header class="main-header">
+		<a href="/" class="breadcrumbs"><i class="iconz-back-arrow" aria-hidden="true"></i> Back</a>
+		<%= partial 'layouts/partials/view-cart' %>
+	</header>
+  
+  <section class="item row">
+
+  	<div class="grid3">
+  		<a href="/assets/img/art/<%= make_path(title) %>.jpg" class="item-img-target hover-multiply-wrap" data-featherlight="image">
+		  	<img src="/assets/img/art/<%= make_path(title) %>.jpg" class="item-img hover-multiply-img" alt="<%= title %>">
+		  </a>
+	  	<a href="/assets/img/art/<%= make_path(title) %>.jpg" class="item-enlarge" data-featherlight="image"
+	  		>Enlarge <i class="iconz-expand-icon" aria-hidden="true"></i>
+	  	</a>
+  	</div>
+
+  	<aside class="grid3 suffix1">
+	  	<h1 class="item-heading"><%= title %></h1>
+	  	<p class="item-dimensions"><%= dimensions %></p>
+	  	<p class="item-price"><%= price %></p>
+	  	<p><i>domestic shipping anywhere in the USA</i></p>
+	  	<p><i>all prints signed and dated</i></p>
+	  	
+	  	<h2 class="item-subheading">Purchase This Print</h2>
+
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="item-paypal-button-form">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="<%= paypal_hosted_button_id %>">
+				<input type="image" src="/assets/img/layout/paypal-button.png" border="0" name="submit" alt="Purchase with PayPal"  class="item-paypal-button">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+  	</aside>
+
+  </section>
+
+</main>
+
+<%= partial 'layouts/partials/about' %>

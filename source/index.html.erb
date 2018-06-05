@@ -1,0 +1,32 @@
+<%= partial 'layouts/partials/topbar' %>
+
+<main class="main container" role="main">
+
+	<header class="main-header">
+		<p>all prints $120  <span class="separator">/</span>  domestic shipping anywhere in the USA  <span class="separator">/</span>  all prints signed and dated</p>
+		<%= partial 'layouts/partials/view-cart' %>
+	</header>
+  
+	<section class="cards">
+
+		<% data.art.each do |item| %>
+			<article class="card <%= item.homepage_size %> <%= make_path(item.title) %>">
+				<a href="/art/<%= make_path(item.title) %>" class="card-img-target hover-multiply-wrap">
+					<img src="/assets/img/art/<%= make_path(item.title) %>.jpg" class="card-img hover-multiply-img" alt="<%= item.title %>">
+				</a>
+
+				<footer class="card-meta">
+					<div class="card-meta-details">
+						<h2 class="card-heading"><%= item.title %></h2>
+						<p class="card-dimensions"><%= item.dimensions %></p>
+					</div>
+					<a class="card-button" href="/art/<%= make_path(item.title) %>">View</a>
+				</footer>
+			</article>
+		<% end %>
+
+	</section>
+
+</main>
+
+<%= partial 'layouts/partials/about' %>
